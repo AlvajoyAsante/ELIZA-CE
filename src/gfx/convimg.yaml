@@ -1,0 +1,19 @@
+palettes:
+  - name: palette
+    images: automatic
+    
+converts:
+  - name: name_a
+    palette: palette
+    transparent-color-index: 0
+    images:
+      - image.png
+    
+outputs:
+  - type: c
+    name: sprites
+    compress: zx7
+    palettes:
+      - palette
+    converts:
+      - name_a
